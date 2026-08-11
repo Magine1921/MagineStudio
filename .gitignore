@@ -1,0 +1,30 @@
+node_modules/
+dist/
+src-tauri/target/
+*.log
+*.part
+.DS_Store
+
+# Local configuration and credentials
+.env
+.env.*
+!.env.example
+
+# Local AI assets and generated media
+*.ckpt
+*.gguf
+*.onnx
+*.pt
+*.pth
+*.safetensors
+*.webm
+*.mp4
+models/
+outputs/
+
+# MagineStudio-managed runtime data
+.h3studio-cache/
+.h3studio-user/
+.maginestudio-cache/
+.maginestudio-user/
+settings.json

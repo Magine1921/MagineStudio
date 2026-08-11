@@ -1,0 +1,40 @@
+{
+  "name": "magine-studio",
+  "private": true,
+  "version": "1.0.0",
+  "description": "Local MiniMax H3 video generation desktop client powered by ComfyUI",
+  "author": "Magine",
+  "license": "Apache-2.0",
+  "homepage": "https://github.com/Magine1921/MagineStudio#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Magine1921/MagineStudio.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Magine1921/MagineStudio/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "tauri": "tauri",
+    "test": "vitest run"
+  },
+  "dependencies": {
+    "@tauri-apps/api": "2.11.1",
+    "@tauri-apps/plugin-dialog": "2.7.2",
+    "lucide-react": "^0.468.0",
+    "react": "19.2.8",
+    "react-dom": "19.2.8"
+  },
+  "devDependencies": {
+    "@tauri-apps/cli": "2.11.4",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@vitejs/plugin-react": "latest",
+    "typescript": "7.0.2",
+    "vite": "8.2.1",
+    "vitest": "latest"
+  }
+}

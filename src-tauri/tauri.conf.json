@@ -1,0 +1,53 @@
+{
+  "$schema": "https://schema.tauri.app/config/2",
+  "productName": "MagineStudio",
+  "version": "1.0.0",
+  "identifier": "com.maginestudio.desktop",
+  "build": {
+    "beforeDevCommand": "npm run dev",
+    "devUrl": "http://localhost:1420",
+    "beforeBuildCommand": "npm run build",
+    "frontendDist": "../dist"
+  },
+  "app": {
+    "windows": [
+      {
+        "title": "MagineStudio",
+        "width": 1600,
+        "height": 900,
+        "minWidth": 1180,
+        "minHeight": 720,
+        "center": true,
+        "resizable": true,
+        "decorations": false
+      }
+    ],
+    "security": {
+      "csp": "default-src 'self'; img-src 'self' asset: http://asset.localhost blob: data:; media-src 'self' http://127.0.0.1:* asset: http://asset.localhost blob:; connect-src ipc: http://ipc.localhost http://127.0.0.1:* ws://127.0.0.1:*; style-src 'self' 'unsafe-inline'; script-src 'self'",
+      "assetProtocol": {
+        "enable": true,
+        "scope": []
+      }
+    }
+  },
+  "bundle": {
+    "active": true,
+    "targets": ["nsis"],
+    "copyright": "Copyright © 2026 Magine",
+    "category": "Video",
+    "shortDescription": "MiniMax H3 本地视频生成工作台",
+    "longDescription": "检测本机硬件，配置 ComfyUI 与 MiniMax H3，并通过本地 API 生成视频。",
+    "windows": {
+      "nsis": {
+        "displayLanguageSelector": false,
+        "installerIcon": "icons/icon.ico"
+      }
+    },
+    "icon": [
+      "icons/32x32.png",
+      "icons/128x128.png",
+      "icons/128x128@2x.png",
+      "icons/icon.ico"
+    ]
+  }
+}
