@@ -957,7 +957,7 @@ mod tests {
         std::fs::create_dir_all(&video_dir).unwrap();
         let video = video_dir.join("MagineStudio_00001_.mp4");
         std::fs::write(&video, b"preview").unwrap();
-        let canonical_video = video.to_string_lossy().to_string();
+        let canonical_video = frontend_file_path(&video.canonicalize().unwrap());
         let root_text = root.to_string_lossy();
 
         let split_shape =
