@@ -34,7 +34,7 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "latest",
     "typescript": "7.0.2",
-    "vite": "8.2.1",
+    "vite": "8.2.2",
     "vitest": "latest"
   }
 }
